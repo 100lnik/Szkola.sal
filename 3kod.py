@@ -9,4 +9,4 @@ input_str = input("Enter numbers separated by spaces: ")
 input_list = list(map(int, input_str.split()))
 
 bubble_sort(input_list)
-print("Sorted array is:", input_list)
+print("Sorted numbers are:", input_list)
