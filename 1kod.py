@@ -1,14 +1,15 @@
 import random
 import string
 
-print ("Hello. I'm a password generator. Please type how long should be your password.")
+print("Hello. I'm a password generator. Please type how long should be your password.")
 x = int(input("Enter a number >>> "))
 
-haslo=[]
+password = []
 
-for i in range (x):
-    string.ascii_letters
-    'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()!@#$%^&*()1234567890!@#$%^&*)(-=7'
-    y = random.choice(string.ascii_letters)
-    haslo.append(y)
-print(*haslo)
+characters = string.ascii_letters + string.digits + string.punctuation
+
+for _ in range(x):
+    y = random.choice(characters)
+    password.append(y)
+
+print("Generated password:", ''.join(password))
